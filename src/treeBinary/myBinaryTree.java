@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BinaryTree {
+public class myBinaryTree {
 	// Root node pointer. Will be null for an empty tree.
 	private myNode root;
 
-	/*
+	/**
 	 * --Node-- The binary tree is built using this nested node class. Each node
 	 * stores one data element, and has left and right sub-tree pointer which
 	 * may be null. The node is a "dumb" nested class -- we just use it for
@@ -373,7 +373,7 @@ public class BinaryTree {
 	 * Compares the receiver to another tree to see if they are structurally
 	 * identical.
 	 */
-	public boolean sameTree(BinaryTree other) {
+	public boolean sameTree(myBinaryTree other) {
 		return (sameTree(root, other.root));
 	}
 
